@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -10,7 +13,7 @@
     <header class="main-header">
       <nav>
         <a class="logo_link" href="index.html">
-          <img class="logo_img" src="images/logo_device.svg" alt="Логотип Device">
+          <img class="logo_img" src="images/logo_device.svg" width="145" height="36" alt="Логотип Device">
         </a>
         <ul class="navigation-user">
           <li class="navigation-item">
@@ -21,22 +24,18 @@
             </form>
           </li>
           <li class="navigation-item">
-            <background-image src="#"></background-image>
             <a class="navigation-link" href="#">Войти</a>
           </li>
           <li class="navigation-item">
-            <background-image src="#"></background-image>
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-item">
-            <background-image src="#"></background-image>
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
         <ul class="navigation-site">
           <li class="navigation-item">
             <a class="navigation-link button" href="catalog.htnl">Каталог товаров</a>
-            <background-image src="#"></background-image>
           </li>
           <li class="navigation-item">
             <a class="navigation-link button" href="#">Доставка</a>
@@ -51,8 +50,9 @@
       </nav>
     </header>
     <main class="main-inner">
+        <h1 class="visual-hidden">Каталог моноподов для селфи</h1>
         <header class="inner-header">
-            <h1 class="inner-header-title">Моноподы для селфи</h1>
+            <h2 class="inner-header-title">Моноподы для селфи</h2>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -66,12 +66,12 @@
               </ul>
           </header>
         <section class="catalog-products">
-          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+          <h3 class="visually-hidden">Список товаров с фильтрами</h3>
           <div class="filters">
             <h3>Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="half-width">
-                <label for="cost">Стоимсть</label>
+                <label for="cost">Стоимость</label>
                     <input type="range" id="cost" min="0" max="7000" step="100" value="5000"> 
               </div>
               <fieldset class="catalog-filter-group">
@@ -137,11 +137,9 @@
               </select>
               <a href="#" class="button-icon">
                 <span class="visually-hidden">По возрастанию</span>
-                <background-image src="#"></background-image>
               </a>
               <a class="button-icon" href="#">
                 <span class="visually-hidden">По убыванию</span>
-                <background-image src="#"></background-image>
               </a>
           </div>
           <div class="items">
@@ -179,7 +177,7 @@
             <ul class="pagination">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-prev pagination-disabled">
-                    <span class="visually-hidden">Назад</span>
+                    <span class="catalog-pages">Назад</span>
                   </a>
                 </li>
                 <li class="pagination-item">
@@ -199,7 +197,7 @@
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link pagination-next" href="#">
-                    <span class="visually-hidden">Вперед</span>
+                    <span class="catalog-pages">Вперед</span>
                   </a>
                 </li>
               </ul>
@@ -208,7 +206,7 @@
     </main>
     <footer class="main-footer">
         <a class="logo_link" href="index.html">
-          <img class="logo_img" src="#" alt="Логотип Device">
+            <img class="logo_img" src="images/logo_device_orange.svg" width="145" height="36" alt="Логотип Device">
         </a>
         <span>
           Санкт-Петербург, набережная<br>
@@ -222,14 +220,13 @@
           </ul>
         </nav>
         <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        <background-image src="#"></background-image>
         <ul class="socials">
           <li><a href="https://www.facebook.com/htmlacademy"><img src="#" alt="Фейсбук"></a></li>
           <li><a href="https://www.instagram.com/htmlacademy/"><img src="#" alt="Инстаграм"></a></li>
           <li><a href="https://twitter.com/htmlacademy_ru"><img src="#" alt="Твиттер"></a></li>
         </ul>
         <a class="logo_academy" href="https://htmlacademy.ru/">
-          <img class="logo_img" src="#" alt="Логотип Html Academy">
+            <img class="logo_img" src="images/logo_academy.svg" width="115" height="33" alt="Логотип Html Academy">
         </a>
       </footer>
     </body>
