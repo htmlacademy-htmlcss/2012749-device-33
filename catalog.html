@@ -11,6 +11,7 @@
   </head>
   <body>
     <header class="main-header">
+        <div class="header-inner">
         <nav>
           <a class="logo_link" href="index.html">
             <img class="logo_img" src="images/logo_device.svg" width="145" height="36" alt="Логотип Device">
@@ -48,7 +49,8 @@
             </li>
           </ul>
         </nav>
-    </header>
+      </div>
+      </header>
     <main class="main-inner">
         <h1 class="visual-hidden">Каталог моноподов для селфи</h1>
         <header class="inner-header">
@@ -66,7 +68,8 @@
               </ul>
           </header>
         <section class="catalog-products">
-          <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+          <div class="catalog-inner">
+          <h3 class="visual-hidden">Список товаров с фильтрами</h3>
           <div class="filters">
             <h3>Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -129,6 +132,7 @@
               <button class="filters-on" type="submit">Показать</button>
             </form>
           </div>
+          <div class="catalog-right-column">
           <div class="sort">
               <h3>Сортировка:</h3>
               <select class="select-control" aria-label="Сортировка">
@@ -202,9 +206,13 @@
                 </li>
               </ul>
           </div>
+        </div>
+    </div>
         </section>
     </main>
     <footer class="main-footer">
+        <div class="footer-inner">
+        <div class="footer-cotacts">
         <a class="logo_link" href="index.html">
           <img class="logo_img" src="images/logo_device_orange.svg" width="145" height="36" alt="Логотип Device">
         </a>
@@ -212,22 +220,28 @@
           Санкт-Петербург, набережная<br>
           реки Карповки, 5, литера П.
         </span>
+        </div>
+        <div class="footer-nav">
         <nav class="footer-nav"> 
           <ul class="navigation-site">
-            <li><a href="#" class="navigation-link">Доставка</a></li>
-            <li><a href="#" class="navigation-link">Гарантия</a></li>
-            <li><a href="#" class="navigation-link">Контакты</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Доставка</a></li>
+            <li class="navigation-item"><a href="#" class="navigation-link">Гарантия</a></li>
+            <li class="navigation-item"></li><a href="#" class="navigation-link">Контакты</a></li>
           </ul>
         </nav>
-        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <ul class="socials">
-            <li><a href="https://www.facebook.com/htmlacademy"><span class="visual-hidden">Фейсбук</span></a></li>
-            <li><a href="https://www.instagram.com/htmlacademy/"><span class="visual-hidden">Инстаграм</span></li>
-            <li><a href="https://twitter.com/htmlacademy_ru"><span class="visual-hidden">Твиттер</span></a></li>
+          <li><a href="https://www.facebook.com/htmlacademy"><span>Фейсбук</span></a></li>
+          <li><a href="https://www.instagram.com/htmlacademy/"><span>Инстаграм</span></li>
+          <li><a href="https://twitter.com/htmlacademy_ru"><span>Твиттер</span></a></li>
         </ul>
+        </div>
+        <div class="footer-tel">
+        <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="logo_academy" href="https://htmlacademy.ru/">
           <img class="logo_img" src="images/logo_academy.svg" width="115" height="33" alt="Логотип Html Academy">
         </a>
+      </div>
+      </div>
       </footer>
     </body>
   </html>
