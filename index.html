@@ -11,6 +11,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="header-inner">
       <nav>
         <a class="logo_link" href="index.html">
           <img class="logo_img" src="images/logo_device.svg" width="145" height="36" alt="Логотип Device">
@@ -48,18 +49,20 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="index-main">
+      <div class="page-container">
       <h1 class="visual-hidden">Интернет-магазин &laquo;Девайс&raquo;</h1>
-      <section class="bestsellers">
+      <section class="bestsellers index-columns">
         <h2 class="visual-hidden">Бестселлеры</h2>
         <div class="bestseller-item-photo">
           <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Товар бестселлер">
           <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
+            <span class="visual-hidden">Предыдущий товар</span>
           </button>
           <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
+            <span class="visual-hidden">Следующий товар</span>
           </button>
       </div>
         <div class="bestseller-item-decription">
@@ -81,9 +84,9 @@
           </table>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog index-columns">
         <h2 class="visual-hidden">Категории товаров</h2>
-        <ul class="catalog-list">
+        <ul class="catalog-list index-columns">
           <li class="catalog-item">
             <a href="#">
               <!-- <img src=""> -->
@@ -117,13 +120,17 @@
           </li>
         </ul>
       </section>
+    </div>
       <section class="services">
+        <div class="page-container index-columns">
         <h2 class="visual-hidden">Сервисы</h2>
+        <div class="info-services">
         <ul class="info-list">
           <li class="services-item delivery"><button type="button">Доставка</button></li>
           <li class="services-item warranty"><button type="button">Гарантия</button></li>
           <li class="services-item credit"><button type="button">Кредит</button></li>
         </ul>
+      </div>
         <div class="services-about delivery">
           <h2>Доставка</h2>
           <span>Мы с удовольствием доставим ваш товар прямо <br>
@@ -131,9 +138,11 @@
             мы неплохо зарабтаем, поднимая его на ваш этаж.
           </span>
         </div>
+      </div>
       </section>
       <!--Я не понимаю что представляет из себя эта секция и как ее реализовать-->
       <!--Может прописать потом для этой ссылки display: block ?-->
+      <div class="page-container">
       <section class="about-rare-item">
         <h2 class="visual-hidden">Редкие товары</h2>
         <a href="#">
@@ -142,6 +151,7 @@
           </div>
         </a>
       </section>
+      <div class="index-columns">
       <section class="about-us">
         <h2>О нас</h2>
         <span>
@@ -168,14 +178,18 @@
         <h3>Интернет-магазин &laquo;Девайс&raquo;</h3>
         <span>
           Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </span>
+        </span> <br>
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <h3>Время работы</h3>
         <span>пн-пт: с 10:00 до 22:00 <br>
         сб-вс: с 10:00 до 19:00</span>
         <a href="#" class="link-item">Напишите нам</a>
       </section>
+    </div>
+  </div>
       <section class="email">
+        <div class="page-container">
+        <div class="email-inner">
         <h2>Подпишитесь на рассылку</h2>
         <span>
           Ежедневный дайджест с обзорами новинок,<br>
@@ -190,9 +204,13 @@
         <div class="its-free">
           <span>Это бесплатно</span>
         </div>
+      </div>
+    </div>
       </section>
     </main>
     <footer class="main-footer">
+      <div class="footer-inner">
+      <div class="footer-cotacts">
       <a class="logo_link" href="index.html">
         <img class="logo_img" src="images/logo_device_orange.svg" width="145" height="36" alt="Логотип Device">
       </a>
@@ -200,22 +218,28 @@
         Санкт-Петербург, набережная<br>
         реки Карповки, 5, литера П.
       </span>
+      </div>
+      <div class="footer-nav">
       <nav class="footer-nav"> 
-        <ul>
-          <li><a href="#" class="navigation-link">Доставка</a></li>
-          <li><a href="#" class="navigation-link">Гарантия</a></li>
-          <li><a href="#" class="navigation-link">Контакты</a></li>
+        <ul class="navigation-site">
+          <li class="navigation-item"><a href="#" class="navigation-link">Доставка</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link">Гарантия</a></li>
+          <li class="navigation-item"></li><a href="#" class="navigation-link">Контакты</a></li>
         </ul>
       </nav>
-      <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <ul class="socials">
-        <li><a href="https://www.facebook.com/htmlacademy"><img src="#" alt="Фейсбук"></a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/"><img src="#" alt="Инстаграм"></a></li>
-        <li><a href="https://twitter.com/htmlacademy_ru"><img src="#" alt="Твиттер"></a></li>
+        <li><a href="https://www.facebook.com/htmlacademy"><span>Фейсбук</span></a></li>
+        <li><a href="https://www.instagram.com/htmlacademy/"><span>Инстаграм</span></li>
+        <li><a href="https://twitter.com/htmlacademy_ru"><span>Твиттер</span></a></li>
       </ul>
+      </div>
+      <div class="footer-tel">
+      <a class="contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a class="logo_academy" href="https://htmlacademy.ru/">
         <img class="logo_img" src="images/logo_academy.svg" width="115" height="33" alt="Логотип Html Academy">
       </a>
+    </div>
+    </div>
     </footer>
   </body>
 </html>

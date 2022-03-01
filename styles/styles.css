@@ -1,0 +1,532 @@
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: #FFFFFF; 
+    color: #000000;
+    align-items: center;
+}
+
+.index-main {
+    width: 100%;
+    /* background: url("../images/email_back.svg") repeat-x 0px 2204px; */
+    padding: 0;
+    margin: 0;
+}
+
+.page-container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.main-header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header-inner {
+    max-width: 1040px;
+    background-image: url("../images/header_back.svg");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
+    margin: 0 auto;
+    padding: 18px;
+    padding-left: 60px ;
+    padding-right: 60px;
+    height: 185px;
+}
+
+.main-footer{
+    width: 100%;
+    background-color:#444444 ;
+    padding: 0;
+    margin: 0;
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+
+.footer-inner span {
+    color: #FFFFFF;
+}
+
+.navigation-user {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation-user .navigation-item {
+    list-style-type: none;
+}
+
+.bestsellers {
+    width: 1160px;
+}
+
+.bestseller-item-photo {
+    width: 540px;
+}
+
+.bestseller-item-decription {
+    width: 560px;
+}
+
+.catalog {
+    width: 1160px;
+}
+
+.catalog-list {
+    width: 100%;
+}
+
+.catalog-item {
+    width: 160px;
+}
+
+.services {
+    background-image: url("../images/services_back.svg");
+    background-repeat: repeat-x;
+    background-position: 0 102px;
+    width: 100%;
+}
+
+.info-services {
+    width: 280px;
+}
+
+.services-about {
+    width: 694px;
+    margin-right: 63px;
+}
+
+.about-rare-item {
+    width: 1160px;
+}
+
+.about-us {
+    width: 540px;
+}
+
+.contacts {
+    width: 540px;
+}
+
+.email {
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+.catalog-inner {
+    display: flex;
+    width: 1160px;
+}
+
+.catalog-right-column {
+    width: 760px;
+}
+
+.filters {
+    width: 200px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.navigation-link,
+.user-link,
+.catalog-item a,
+.about-rare-item a,
+.link-item, .socials a,
+.breadcrumbs-link,
+.button-icon,
+.product-card-link,
+.pagination-link {
+    text-decoration: none;
+}
+
+.navigation-site {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation-site .navigation-item {
+    list-style-type: none;
+}
+
+.card-items {
+    width: 760px;
+    margin-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.card-items .item {
+    list-style-type: none;
+}
+
+.catalog-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.catalog-list .catalog-item {
+    list-style-type: none;
+}
+
+.info-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.info-list .services-item {
+    list-style-type: none;
+}
+
+.socials {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.socials li {
+    list-style-type: none;
+}
+
+.breadcrumbs {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.breadcrumbs .breadcrumbs-link {
+    list-style-type: none;
+}
+
+.catalog-filter-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.catalog-filter-list .catalog-filter-item {
+    list-style-type: none;
+}
+
+.pagination {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.pagination .pagination-item {
+    list-style-type: none;
+}
+
+
+/* .email {
+    background-color:#F0F0F0 ;
+} */
+
+.email input {
+    background-color:#F0F0F0;
+    border: 3px solid #C4C4C4;
+}
+
+.email input[id="email"] {
+    border: none;
+    border-bottom: 3px solid #C4C4C4;
+}
+
+.email input[type="email"]::-moz-placeholder {
+    color: #444444;
+}
+
+.email input[type="email"]::-webkit-input-placeholder {
+    color: #444444;
+}
+
+.catalog-products {
+    background-color:#F0F0F0;
+}
+
+.pagination {
+    background-color:#F0F0F0;
+}
+
+.items {
+    background-color: #FFFFFF; 
+}
+
+.navigation-user .user-link {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.navigation-user input {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+span {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.contacts-phone {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.email input::placeholder{
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+a.navigation-link,
+a.link-item,
+.services-item button,
+.email input[value],
+.catalog-pages,
+.filters-on {
+    font-family: Raleway, "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+a {
+    color: #000000;
+}
+
+.main-footer a {
+    color: #FFFFFF;
+}
+
+.config {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.catalog-item p {
+    font-family: Raleway, "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+
+.rare-list p {
+    font-family: Raleway, "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.delivery-company li {
+    color: #FFE17F;
+}
+
+.delivery-company b {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color:#000000 ;
+}
+
+.contacts h3 {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.breadcrumbs-link,.filters label {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog-products h3 {
+    font-family: Raleway, "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.select-control option{
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.select-control {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    border: none;
+    background-color: #F0F0F0 ;
+}
+
+.product-card-title {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.catalog-card-price{
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #444444;
+}
+
+.show-more{
+    font-family: Raleway, "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: 3px solid #E5E5E5;
+    background-color: #FFFFFF;
+}
+
+.pagination-link {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.catalog-pages {
+    color:#000000;
+}
+
+.navigation-item input {
+    background-color: #FFE17F;
+    border: 2px solid #000000;
+}
+
+.navigation-item input[type="search"] {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.navigation-item input[type="search"]::-moz-placeholder {
+    color: #000000;
+}
+
+.navigation-item input[type="search"]::-webkit-input-placeholder {
+    color: #000000;
+}
+
+
+.navigation-item input[type="submit"] {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.info-list button {
+    background-color: #F0F0F0;
+    border: none ;
+}
+
+.info-list .delivery button {
+    background-color: #000000;
+    color: #FFE17F;
+    border: none;
+}
+
+.about-rare-item a {
+    background-color: #F0F0F0;
+}
