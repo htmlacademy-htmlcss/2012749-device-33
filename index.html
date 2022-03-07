@@ -58,13 +58,13 @@
         <h2 class="visual-hidden">Бестселлеры</h2>
         <div class="bestseller-item-photo">
           <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Товар бестселлер">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visual-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visual-hidden">Следующий товар</span>
-          </button>
-      </div>
+          <!-- <button class="slider-button slider-prev" type="button">
+          <span class="visual-hidden">Предыдущий товар</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visual-hidden">Следующий товар</span>
+        </button> -->
+        </div>
         <div class="bestseller-item-decription">
           <h2>Порхает как бабочка,<br>жалит как пчела! </h2>
           <span class="bestseller-description">
@@ -73,7 +73,7 @@
           </span>
           <a class="link-item" href="#">Подробнее</a>
           <table class="item-config">
-            <tr >
+            <tr>
               <td class="config">800 м</td>
               <td class="config">50 м</td>
             </tr>
@@ -89,32 +89,49 @@
         <ul class="catalog-list index-columns">
           <li class="catalog-item">
             <a href="#">
-              <!-- <img src=""> -->
-              <p>Виртуальная реальность</p>
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
+              <p>Виртуальная<br>реальность</p>
             </a>
           </li>
           <li class="catalog-item"> 
             <a href="catalog.html">
-              <p>Моноподы для селфи</p>
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
+              <p>Моноподы<br>для селфи</p>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
               <p>Экшн-камеры</p>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
               <p>Фитнес-браслеты</p>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
               <p>Умные часы</p>
             </a>
           </li>
           <li class="catalog-item">
             <a href="#">
+              <div class="catalog-item-back">
+                <img class="catalog-icon" src="">
+              </div>
               <p>Квадрокоптеры</p>
             </a>
           </li>
@@ -140,15 +157,16 @@
         </div>
       </div>
       </section>
-      <!--Я не понимаю что представляет из себя эта секция и как ее реализовать-->
-      <!--Может прописать потом для этой ссылки display: block ?-->
       <div class="page-container">
       <section class="about-rare-item">
         <h2 class="visual-hidden">Редкие товары</h2>
         <a href="#">
+          <div class="rare-link">
+          <div class="rare-icon-1"></div>
           <div class="rare-list">           
             <p>Доставим редкий товар под заказ</p>
           </div>
+        </div>
         </a>
       </section>
       <div class="index-columns">
@@ -197,9 +215,7 @@
           спецпредложения и вот это вот все.
         </span>
         <form method="get" action="https://echo.htmlacademy.ru/">
-          <!-- <label for="search" class="visual-hidden">Поиск по сайту</label> -->
-          <input type="email" id="email" name="email" placeholder="Ваш e-mail">
-          <input type="submit" value="Подписаться">
+          <input type="email" id="email" name="email" placeholder="Ваш e-mail"><input type="submit" id="sub-email" value="Подписаться">
         </form>
         <div class="its-free">
           <span>Это бесплатно</span>
@@ -215,22 +231,22 @@
         <img class="logo_img" src="images/logo_device_orange.svg" width="145" height="36" alt="Логотип Device">
       </a>
       <span>
-        Санкт-Петербург, набережная<br>
-        реки Карповки, 5, литера П.
+        Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.
       </span>
+      <div class="yellow-stuff"></div>
       </div>
       <div class="footer-nav">
       <nav class="footer-nav"> 
         <ul class="navigation-site">
           <li class="navigation-item"><a href="#" class="navigation-link">Доставка</a></li>
           <li class="navigation-item"><a href="#" class="navigation-link">Гарантия</a></li>
-          <li class="navigation-item"></li><a href="#" class="navigation-link">Контакты</a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link">Контакты</a></li>
         </ul>
       </nav>
       <ul class="socials">
-        <li><a href="https://www.facebook.com/htmlacademy"><span>Фейсбук</span></a></li>
-        <li><a href="https://www.instagram.com/htmlacademy/"><span>Инстаграм</span></li>
-        <li><a href="https://twitter.com/htmlacademy_ru"><span>Твиттер</span></a></li>
+        <li><a href="https://www.facebook.com/htmlacademy"><span class="visual-hidden">Фейсбук</span></a></li>
+        <li><a href="https://www.instagram.com/htmlacademy/"><span class="visual-hidden">Инстаграм</span></a></li>
+        <li><a href="https://twitter.com/htmlacademy_ru"><span class="visual-hidden">Твиттер</span></a></li>
       </ul>
       </div>
       <div class="footer-tel">
