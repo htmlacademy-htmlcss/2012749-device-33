@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -85,7 +83,7 @@
       </header>
     <main class="main-inner">
         <header class="page-container inner-header">
-            <h1 class="inner-header-title">Моноподы для селфи</h1>
+            <h1 class="titles inner-header-title">Моноподы для селфи</h1>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -100,17 +98,17 @@
           </header>
         <section class="catalog-products">
           <div class="page-container catalog-inner">
-          <h3 class="visually-hidden">Список товаров с фильтрами</h3>
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <div class="filters">
             <h3>Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="filter-frame">
-                <label class="filter-names" for="cost">Стоимость</label>
+                <label class="filter-title filter-names" for="cost">Стоимость</label>
                     <input type="range" id="cost" min="0" max="7000" step="100" value="5000"> 
               </div>
               <div class="filter-frame">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет</legend>
+                <legend class="filter-title catalog-filter-title">Цвет</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -147,7 +145,7 @@
             </div>  
             <div class="filter-frame">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Bluetooth</legend>
+                <legend class="filter-title catalog-filter-title">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -198,7 +196,7 @@
                         <div class="product-card-image">
                             <b class="about-product">Подробнее</b>
                             <div class="show-product"></div>
-                            <img src="images/product-1.png" height="380" width="360">
+                            <img src="images/product-1.png" height="380" width="360" alt="Фото Любительской селфи-палки">
                         </div>
                         <h4 class="product-card-title">Любительская<br>селфи-палка</h4>
                         <span class="product-card-price">500 ₽</span>
@@ -209,7 +207,7 @@
                         <div class="product-card-image">
                             <b class="about-product">Подробнее</b>
                             <div class="show-product"></div>
-                            <img src="images/product-2.png" height="380" width="360">
+                            <img src="images/product-2.png" height="380" width="360" alt="Фото Профессиональной селфи-палки">
                         </div>
                         <h4 class="product-card-title">Профессиональная<br>селфи-палка</h4>
                         <span class="product-card-price">1500 ₽</span>
@@ -220,7 +218,7 @@
                         <div class="product-card-image">
                             <b class="about-product">Подробнее</b>
                             <div class="show-product"></div>
-                            <img src="images/product-3.png" height="380" width="360">
+                            <img src="images/product-3.png" height="380" width="360" alt="Фото Непотопляемой селфи-палки">
                         </div>
                         <h4 class="product-card-title">Непотопляемая<br>селфи-палка</h4>
                         <span class="product-card-price">2500 ₽</span>
@@ -231,7 +229,7 @@
                         <div class="product-card-image">
                             <b class="about-product">Подробнее</b>
                             <div class="show-product"></div>
-                            <img src="images/product-4.png" height="380" width="360">
+                            <img src="images/product-4.png" height="380" width="360" alt="Фото Селфи-палки Следуй за мной">
                         </div>
                         <h4 class="product-card-title">Селфи-палка &laquo;Следуй<br>за мной&raquo;</h4>
                         <span class="product-card-price">1500 ₽</span>
@@ -270,7 +268,6 @@
         </div>
     </div>
         </section>
-    </div>
     </main>
     <footer class="main-footer">
         <div class="footer-inner">
