@@ -1526,7 +1526,7 @@ a.link-item,
     left: -60px;
 }
 
-.open-catalog:focus-within .menu-container {
+.open-catalog:focus-within + .menu-container {
     display: block;
 }
 
