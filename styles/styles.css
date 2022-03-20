@@ -83,7 +83,6 @@ body {
 
 .footer-inner {
     display: flex;
-    justify-content: space-between;
     max-width: 1160px;
     margin: 0 auto;
     color: #FFFFFF;
@@ -198,7 +197,7 @@ body {
     width: 1160px;
     margin: 0;
     padding: 0;
-    padding-bottom: 38px;
+    padding-bottom: 34px;
     background: url("../images/header_back.svg") no-repeat 0 -880px;
     align-items: flex-start;
     margin-bottom: 70px;
@@ -236,13 +235,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 49px;
+    margin-bottom: 46px;
 }
 
 .slider-container .link-item {
     display: inline-block;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 37px;
+    padding-right: 37px;
     margin-left: 0;
 }
 
@@ -259,11 +258,19 @@ body {
 }
 
 .slider-number a:not(:last-of-type) {
-    margin-right: 12px;
+    margin-right: 16px;
 }
 
 .item-config td {
-    padding-right: 20px;
+    padding-right: 15px;
+}
+
+.config-about {
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
 }
 
 tr:last-of-type .config {
@@ -274,7 +281,7 @@ tr:last-of-type .config {
 .config {
     color: #000000;
     text-align: left;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
 .catalog {
@@ -422,13 +429,13 @@ tr:last-of-type .config {
 }
 
 .rare-list {
-    width: 952px;
+    width: 910px;
 }
 
 .rare-list p {
     margin:0;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 38px;
+    padding-bottom: 38px;
     width: 910px;
     text-align: center;
 }
@@ -440,12 +447,18 @@ tr:last-of-type .config {
     background-position: 42px 30px;
 }
 
+.black-icon {
+    display: block;
+    height: 7px;
+    width: 84px;
+    background-color: #000000;
+}
+
 .about-us {
     align-self: flex-start;
     width: 520px;
     margin: 0;
     padding: 0 ;
-    padding-top: 47px;
 }
 
 .about-us .link-item {
@@ -459,6 +472,7 @@ tr:last-of-type .config {
 }
 
 .about-us h2, .contacts h2 {
+    margin-top: 40px;
     margin-bottom: 48px;
 }
 
@@ -467,11 +481,15 @@ tr:last-of-type .config {
     margin-bottom: 30px;
 }
 
+.about-us .del-com {
+    margin-bottom: 25px;
+}
+
 .delivery-company {
     margin: 0;
     padding: 0;
     margin-left: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .delivery-company li:last-child {
@@ -479,7 +497,7 @@ tr:last-of-type .config {
 }
 
 .delivery-company li {
-    margin-bottom: 19px;
+    margin-bottom: 10px;
 }
 
 .delivery-company b {
@@ -495,16 +513,15 @@ tr:last-of-type .config {
     width: 532px;
     margin: 0;
     padding: 0 ;
-    padding-top: 47px;
-    margin-bottom: 80px;
+    margin-bottom: 74px;
 }
 
 .contacts span:first-of-type {
     display: block ;
-    margin-bottom: 30px;
 }
 
 .contacts h3 {
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
@@ -518,7 +535,7 @@ tr:last-of-type .config {
 
 .contacts span:last-of-type {
     display: block ;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .contacts a:last-of-type {
@@ -543,14 +560,18 @@ tr:last-of-type .config {
 }
 
 .email-inner > span {
-    width: 560px;
+    width: 553px;
     align-self: flex-end;
     margin-top: 74px;
-    margin-bottom: 146px;
+    margin-bottom: 145px;
 }
 
 .email-inner form {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
+}
+
+.email .titles {
+    margin-left: 5px;
 }
 
 .email form {
@@ -571,7 +592,7 @@ tr:last-of-type .config {
 
 .email input[id="email"] {
     display: inline-block;
-    width: 541px;
+    width: 557px;
     padding-top: 13px;
     padding-bottom: 11px;
     padding-left: 16px;
@@ -638,6 +659,7 @@ tr:last-of-type .config {
 }
 
 .footer-cotacts span {
+    width: 236px;
     font-family: Rubik, "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -656,12 +678,15 @@ tr:last-of-type .config {
 }
 
 div.footer-nav {
+    margin-left: 117px;
+    margin-right: 190px;
     width: 444px;
 }
 
 div.footer-nav .navigation-site {
-    margin-top: 137px;
-    margin-bottom: 62px; 
+    width: 444px;
+    margin-top: 134px;
+    margin-bottom: 55px; 
 }
 
 div.footer-nav .navigation-link:hover {
@@ -677,9 +702,9 @@ div.footer-nav .navigation-link:active {
 
 div.footer-nav .socials {
     display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    padding-left: 153px;
 }
 
 .socials li {
@@ -763,6 +788,7 @@ div.footer-nav .socials {
     padding: 35px;
     padding-right: 0;
     padding-left: 60px;
+    padding-top: 40px;
 }
 
 .inner-header-title {
@@ -781,7 +807,7 @@ div.footer-nav .socials {
     background-image: url("../images/lil-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 16px 6px;
-    padding-left: 36px;
+    padding-left: 38px;
 }
 
 .breadcrumbs-item {
@@ -808,7 +834,7 @@ div.footer-nav .socials {
     width: 760px;
     padding: 40px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     display: flex;
     align-items: flex-start;
 }
@@ -899,7 +925,7 @@ div.footer-nav .socials {
 
 .pagination-prev, .pagination-next {
     display: block;
-    padding: 25px;
+    padding: 20px 25px;
 }
 
 .catalog-right-column {
@@ -949,10 +975,10 @@ div.footer-nav .socials {
 }
 
 .navigation-site {
+    width: 471px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 471px;
     margin: 0;
     padding: 0;
 }
@@ -1003,9 +1029,10 @@ div.footer-nav .socials {
 .slider-button {
     position: absolute;
     z-index: 5;
-    top: 172px;
+    top: 180px;
     background-color: white;
     border: none;
+    padding: 0;
 }
 
 .slider-prev {
@@ -1020,7 +1047,7 @@ div.footer-nav .socials {
     width: 760px;
     margin: 0;
     padding-top: 70px;
-    padding-bottom: 44px;
+    padding-bottom: 42px;
     padding-left: 40px;
     padding-right: 40px;
     display: grid;
@@ -1070,7 +1097,7 @@ div.footer-nav .socials {
 .product-card-link {
     display: grid;
     grid-template-columns: min-content min-content;
-    row-gap: 32px;
+    row-gap: 25px;
     color: #000000;
 }
 
@@ -1131,7 +1158,7 @@ div.footer-nav .socials {
 .info-list {
     display: grid ;
     grid-template-columns: 280px;
-    row-gap: 36px;
+    row-gap: 34px;
     margin: 0;
     padding: 0;
 }
@@ -1302,9 +1329,10 @@ a.link-item,
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
-    padding-bottom: 20px;
+    padding-bottom: 27px;
     color: #000000;
 }
+
 
 .catalog-products h3 {
     font-family: Raleway, "Arial", sans-serif;
@@ -1565,7 +1593,7 @@ a.link-item,
   } 
 
   .toggle-min {
-    left: 0;
+    left: -5px;
   }
   
   .toggle-max {
@@ -1634,6 +1662,10 @@ a.link-item,
   .bluetooth .control-mark {
     border-radius: 50%;
   }
+
+ .bluetooth .bt-yes-no {
+     padding-bottom: 20px;
+ }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
