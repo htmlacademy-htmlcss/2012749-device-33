@@ -44,11 +44,52 @@
           </li>
           <li class="user-item">
             <a class="user-link cart" href="#">
+              <span class="item-counter">2</span>
               <svg class="icon-user" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                 <path d="M15.3 5.38892L11.8 5.58892L8.6 0.688916C8.5 0.488916 8.2 0.388916 8 0.388916C7.8 0.388916 7.5 0.488916 7.4 0.688916L4.2 5.58892H0.7C0.3 5.58892 0 5.88892 0 6.28892C0 6.38892 0 6.38892 0 6.48892L1.9 13.2889C2.1 13.9889 2.6 14.3889 3.3 14.3889H12.7C13.4 14.3889 13.9 13.9889 14.1 13.2889L16 6.38892C16 6.28892 16 6.28892 16 6.18892C16 5.78892 15.7 5.38892 15.3 5.38892ZM8 2.28892L10.2 5.48892H5.9L8 2.28892Z" fill="black"/>
               </svg>
               Корзина
             </a>
+              <div class="mini-cart">
+                <svg class="mini-cart-arrow" width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <path d="M14 6.77783H0L7 0.777832L14 6.77783Z" fill="black"/>
+                </svg>
+                <ul class="mini-cart-items">
+                  <li>
+                    <a class="mini-cart-item" href="#">
+                      <img src="images/product-1.png" height="43" width="43" alt="Фото Любительской селфи-палки">
+                      Любительская<br>селфи-палка
+                    </a>
+                    <button class="delete-item" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                      </svg>
+                    </button>
+                  </li>
+                  <li>
+                    <a class="mini-cart-item" href="#">
+                      <img src="images/product-2.png" height="43" width="43" alt="Фото Профессиональной селфи-палки">
+                      Профессиональная<br>селфи-палка
+                    </a>
+                    <button class="delete-item" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="about-mini-cart">
+                  <li class="info-mini-cart">
+                    Товаров: 2
+                  </li>
+                  <li class="info-mini-cart">
+                    Сумма: 2000 ₽
+                  </li>
+                </ul>
+                <a class="open-cart-button" href="#">
+                  Открыть корзину
+                </a>
+              </div>
           </li>
         </ul>
       </nav>
@@ -372,5 +413,62 @@
     </div>
     </div>
     </footer>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="auth-name">Ваше имя:</label>
+              <input class="auth-form-field field" type="text" id="auth-name" name="auth-name" placeholder="Введите имя">
+              <svg class="modal-name" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M0 12H13C12.8 9.4 10.9 7.2 8.3 6.5C9.3 5.9 10 4.8 10 3.5C10 1.6 8.4 0 6.5 0C4.6 0 3 1.6 3 3.5C3 4.8 3.7 5.9 4.7 6.5C2.1 7.2 0.2 9.4 0 12Z" fill="#B3B3B3"/>
+              </svg> 
+            </p>
+            <p class="field-group">
+              <label for="auth-email">Ваш e-mail:</label>
+              <input class="auth-form-field field" type="email" id="auth-email" name="auth-email" placeholder="Введите e-mail">
+              <svg class="modal-email" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z" fill="#B3B3B3"/>
+              </svg>
+            </p>
+            <p class="field-group">
+              <label for="auth-need">Что нужно привезти:</label>
+              <input class="auth-form-field field" type="text" id="auth-need" name="auth-need" placeholder="В свободной форме">
+            </p>
+            <p class="field-group">
+              <label class="how-much" for="auth-count">Количество:
+                <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                  <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
+                  <path d="M14 7H12V9H14V7Z" fill="black"/>
+                  <path d="M14 11H12V19H14V11Z" fill="black"/>
+                </svg>
+                <b class="tooltip">
+                  <svg class="tooltip-arrow" width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M14 6.77783H0L7 0.777832L14 6.77783Z" fill="black"/>
+                  </svg>
+                  Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.
+                </b>
+              </label>
+                <button type="button" class="button-count minus">
+                  <svg class="modal-minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M16 0H0V2H16V0Z" fill="black"/>
+                  </svg>
+                </button>
+                <input class="auth-form-field field" type="text" id="auth-count" name="auth-count" value="1">
+                <button type="button" class="button-count plus">
+                  <svg class="modal-plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                  </svg>                    
+                </button>
+            </p>
+            <button type="submit" class="link-item">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
