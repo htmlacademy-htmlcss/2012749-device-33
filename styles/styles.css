@@ -249,19 +249,20 @@ body {
     display: flex;
 }
 
-.slider-number a {
+.slider-point {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 16px;
     height: 16px;
-}
-
-.slider-number a:not(:last-of-type) {
     margin-right: 16px;
 }
 
-.item-config td {
+.slider-3 {
+    margin-right: 0;
+}
+
+.table-cell {
     padding-right: 15px;
 }
 
@@ -271,11 +272,6 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: #444444;
-}
-
-tr:last-of-type .config {
-    color: #444444;
-    padding-bottom: 0;
 }
 
 .config {
@@ -516,16 +512,16 @@ tr:last-of-type .config {
     margin-bottom: 74px;
 }
 
-.contacts span:first-of-type {
+.where-get-order {
     display: block ;
 }
 
-.contacts h3 {
+.contacts-titles {
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.contacts span:nth-of-type(2) {
+.adress {
     margin: 0;
 }
 
@@ -533,12 +529,12 @@ tr:last-of-type .config {
     margin-bottom: 30px;
 }
 
-.contacts span:last-of-type {
+.opening-hours {
     display: block ;
     margin-bottom: 35px;
 }
 
-.contacts a:last-of-type {
+.contacts .link-item {
     margin-bottom: 10px;
 }
 
@@ -677,30 +673,30 @@ tr:last-of-type .config {
     margin-bottom: 70px;
 }
 
-div.footer-nav {
+.footer-nav-inner {
     margin-left: 117px;
     margin-right: 190px;
     width: 444px;
 }
 
-div.footer-nav .navigation-site {
+.footer-nav-inner .navigation-site {
     width: 444px;
     margin-top: 134px;
     margin-bottom: 55px; 
 }
 
-div.footer-nav .navigation-link:hover {
+.footer-nav-inner .navigation-link:hover {
     color:#FFC700;
     padding-bottom: 4px;
     border-bottom: #FFC700 2px solid;
     opacity: 1;
 }
 
-div.footer-nav .navigation-link:active {
+.footer-nav-inner .navigation-link:active {
     opacity: 0.3;
 }
 
-div.footer-nav .socials {
+.footer-nav-inner .socials {
     display: flex;
     margin: 0;
     padding: 0;
@@ -770,11 +766,11 @@ div.footer-nav .socials {
     margin-left: 60px;
 }
 
-.logo_academy:hover svg path {
+.logo_academy:hover path {
     fill: #FFFFFF;
 }
 
-.logo_academy:active svg path {
+.logo_academy:active path {
     fill: #FFFFFF;
     opacity: 0.3;
 }
@@ -791,9 +787,9 @@ div.footer-nav .socials {
 
 .header-plus {
     width: 100%;
-    height: 4px;
+    height: 5px;
     background-color: #FFE17F;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 }
 
 .inner-header-title {
@@ -1493,11 +1489,17 @@ a.link-item,
 }
 
 
-.search-pad input[type="submit"] {
+.search-submit {
+    background-color: #FFE17F;
+    border-color: #000000;
     border-radius: 0px 50px 50px 0px;
     padding: 8px;
     padding-left: 54px;
     padding-right: 54px;
+    font-family: Rubik, "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .search-pad input[type="search"]:active {
@@ -1509,17 +1511,17 @@ a.link-item,
 }
 
 
-.search-pad input[type="submit"]:hover {
+.search-submit:hover {
     color: #FFFFFF;
     background-color: #000000;
 }
 
-.search-pad input[type="submit"]:active {
+.search-submit:active {
     background-color: #000000;
     color: #4b4b4b;
 }
 
-.search-pad input[type="submit"]:disabled {
+.search-submit:disabled {
     opacity: 0.3;
 }
 
